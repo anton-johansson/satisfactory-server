@@ -6,7 +6,7 @@ RUN mkdir /opt/satisfactory-server && chown steam:steam /opt/satisfactory-server
 USER steam
 
 # Replace this value with the next build number. This helps re-building only when needed, since Docker will cache layers.
-RUN echo "Server version: 174506"
+RUN echo "Server version: 174686"
 
 # Install the game
 RUN ./steamcmd.sh +login anonymous +force_install_dir /opt/satisfactory-server +app_update 1690800 validate +quit
